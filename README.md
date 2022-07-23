@@ -1,5 +1,7 @@
 # Vue Wordle
 
+Taken from yyx990803/vue-wordle with gratitude and used for my private party.
+
 [Live demo](https://vue-wordle.netlify.app/)
 
 A Vue implementation of the [Wordle game](https://www.powerlanguage.co.uk/wordle/). This is just for fun and doesn't aim to 100% replicate the original.
