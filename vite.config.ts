@@ -5,5 +5,9 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue({
     reactivityTransform: true
-  })]
+  })],
+  server: {
+	  port: '80',
+	  host: true
+  }
 })
