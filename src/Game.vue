@@ -112,10 +112,20 @@ function completeRow() {
       // yay!
       setTimeout(() => {
         grid = genResultGrid()
+        let message = "Great"
+        if (location.search) {
+          try {
+            const encoded = location.search.slice(1)
+            const decoded = atob(encoded)
+            if (decoded.includes(':')) {
+              message = decoded.substring(decoded.indexOf(':') + 1)
+            }
+          } catch (e) {
+            alert(`Malformed result message`)
+          }
+        }
         showMessage(
-          ['Genius', 'Magnificent', 'Impressive', 'Splendid', 'Great', 'Phew'][
-            currentRowIndex
-          ],
+          message,
           -1
         )
         success = true
@@ -179,13 +189,7 @@ function genResultGrid() {
     </div>
   </Transition>
   <header>
-    <h1>VVORDLE</h1>
-    <a
-      id="source-link"
-      href="https://github.com/yyx990803/vue-wordle"
-      target="_blank"
-      >Source</a
-    >
+    <h1>Ultron Drone Control</h1>
   </header>
   <div id="board">
     <div
