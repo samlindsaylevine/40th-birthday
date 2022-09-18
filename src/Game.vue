@@ -111,7 +111,7 @@ function completeRow() {
     if (currentRow.every((tile) => tile.state === LetterState.CORRECT)) {
       // yay!
       setTimeout(() => {
-        grid = genResultGrid()
+        // grid = genResultGrid()
         let message = "Great"
         if (location.search) {
           try {
@@ -139,7 +139,7 @@ function completeRow() {
     } else {
       // game over :(
       setTimeout(() => {
-        showMessage(answer.toUpperCase(), -1)
+        showMessage("Access denied!", -1)
       }, 1600)
     }
   } else {

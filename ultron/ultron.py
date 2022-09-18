@@ -27,7 +27,8 @@ entryBox.grid(column=1, row=2, pady=20)
 def shutdown(*args):
     text = entryBox.get()
     new_text = ("I cannot be shut down without the code." if text == "" else
-                "The correct answer" if text == "correct" else
+                "Shutting down. Central processing unit across hall atop dryer." if text == "75432617589062" else
+                "They don't even know who they are! Pathetic!" if text == "76543182361752849026142" else
                 "They fumble in error! " + text + " is not the correct code.")
     resultText['text'] = new_text
 

@@ -6,8 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ultron Drone Control</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+  <script>
+    function go() {
+      var value = document.getElementById("character").value;
+      window.location.href = "drone.html?" + btoa(value);
+      return;
+    }
+  </script>
+  <h1 style="text-align:center;">Select your identity to access your digit of the shutdown code.<br/></h1>
+  <div style = "text-align:center;">
+    <select name = "character" id = "character" style="text-align:center;">
+      <option value="small:7">Ant-Man</option>
+      <option value="kings:6">Black Panther</option>
+      <option value="spies:5">Black Widow</option>
+      <option value="honor:4">Captain America</option>
+      <option value="pilot:3">Captain Marvel</option>
+      <option value="spell:1">Doctor Strange</option>
+      <option value="might:8">Drax</option>
+      <option value="green:2">Gamora</option>
+      <option value="plant:3">Groot</option>
+      <option value="aimed:6">Hawkeye</option>
+      <option value="smash:1">Hulk</option>
+      <option value="scrap:7">Iron Man</option>
+      <option value="rival:5">Nebula</option>
+      <option value="plots:2">Nick Fury</option>
+      <option value="guard:8">Okoye</option>
+      <option value="agent:4">Phil Coulson</option>
+      <option value="bombs:9">Rocket</option>
+      <option value="hexed:0">Scarlet Witch</option>
+      <option value="quill:2">Starlord</option>
+      <option value="godly:6">Thor</option>
+      <option value="robot:1">Vision</option>
+      <option value="sting:4">Wasp</option>
+      <option value="fight:2">War Machine</option>
+    </select>
+  </div>
+  <br/><br/>
+  <div style = "text-align:center;">
+    <button class = "btn" type="button" onclick="go()" style="text-align:center;">OK</button>
+  </div>
 </html>
