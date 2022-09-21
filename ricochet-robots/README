@@ -1,0 +1,82 @@
+Simple program for generating (and solving) small puzzles like the board game Ricochet Robots.
+
+The ones that I selected for the party:
+
++-+-+-+-+-+-+-+-+
+| .B. . . . . . |
++-+.............+
+| . . . . . .G. |
++...+.......+-+.+
+| . | . . . .Y. |
++...+.........+-+
+| . . . . . . . |
++.......+-+...+.+
+| .*. . | . . | |
++.....+-+.....+.+
+| . . . . . . . |
++.....+.........+
+| .R. | . . . . |
++.+-+.+.........+
+| | . . . . . . |
++-+-+-+-+-+-+-+-+
+[[Move(color=BLUE, direction=DOWN), Move(color=RED, direction=LEFT), Move(color=RED, direction=UP), Move(color=GREEN, direction=LEFT), Move(color=GREEN, direction=DOWN)]]
+
+
++-+-+-+-+-+-+-+-+
+| . . | . . . . |
++.+...+...+-+...+
+| | . . . . . . |
++.+.+-+.......+.+
+| . | . . . . |Y|
++...+.+-+...+-+-+
+| . . . . . . . |
++.......+-+.....+
+| . . . . . . . |
++...............+
+| . . . .*.G. . |
++.....+-+-+.....+
+| . .R. . . . . |
++...............+
+|B. . . . . . . |
++-+-+-+-+-+-+-+-+
+[[Move(color=BLUE, direction=UP), Move(color=RED, direction=LEFT), Move(color=BLUE, direction=DOWN), Move(color=BLUE, direction=RIGHT)]]
+
+
++-+-+-+-+-+-+-+-+
+| | . . . . . .G|
++.+...+-+.......+
+| . . . .B. . . |
++.+-+...........+
+| . .Y. . . . . |
++-+.......+-+...+
+| | . . . . . . |
++.+...........+-+
+| . . . . . . . |
++...............+
+| . .*. . . . . |
++.........+-+.+-+
+| . . . . . . .R|
++.+-+...........+
+| . | . . . . . |
++-+-+-+-+-+-+-+-+
+[[Move(color=GREEN, direction=DOWN), Move(color=GREEN, direction=LEFT), Move(color=GREEN, direction=DOWN), Move(color=RED, direction=LEFT), Move(color=YELLOW, direction=DOWN)]]
+
+
++-+-+-+-+-+-+-+-+
+| | . . . . . . |
++.+...........+-+
+| | . . .B. . . |
++.+.......+-+...+
+| . . . . . . . |
++...+-+.........+
+| .Y.R. . . . . |
++.......+.+.....+
+| . . . | | . . |
++.......+.+.....+
+| . . . . | . . |
++-+.....+.+.....+
+| . . . | . .*. |
++.......+.+-+...+
+| . . .G. . . . |
++-+-+-+-+-+-+-+-+
+[[Move(color=RED, direction=RIGHT), Move(color=YELLOW, direction=RIGHT), Move(color=RED, direction=DOWN), Move(color=GREEN, direction=RIGHT), Move(color=YELLOW, direction=DOWN)]]
