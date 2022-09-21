@@ -3,3 +3,6 @@ node_modules
 dist
 dist-ssr
 *.local
+ricochet-robots/.gradle
+ricochet-robots/build
+.idea
